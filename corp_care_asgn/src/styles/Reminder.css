@@ -1,0 +1,109 @@
+.reminder {
+    border: 1px solid red;
+    width: 209px;
+    height: 319px;flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.reminder ~ p {
+    position: absolute;
+    width: 118px;
+    height: 30px;
+    left: 446px;
+    top: 0px;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 91.5%;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+
+.reminder_div {
+    position: absolute;
+    width: 209px;
+    height: 269px;
+    left: 446px;
+    top: 50px;
+    background: #0038FF;
+    border-radius: 15px;
+}
+
+.reminder_div > img {
+    background-color: #E6E6E6;
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    left: 62px;
+    top: 59px;
+    border-radius: 15px;
+}
+
+.reminder_div > p:nth-child(2) {
+    position: absolute;
+    width: 148px;
+    height: 33px;
+    left: 25px;
+    top: 147px;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 141.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.reminder_div > p:nth-child(3) {
+    position: absolute;
+    width: 148px;
+    height: 33px;
+    left: 25px;
+    top: 20px;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 91.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.setAsReminder {
+    position: absolute;
+    width: 164px;
+    height: 39px;
+    left: 24px;
+    top: 199px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+
+.setAsReminder + p {
+    position: absolute;
+    width: 104px;
+    height: 26px;
+    left: 54px;
+    top: 206px;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 141.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000000;
+}

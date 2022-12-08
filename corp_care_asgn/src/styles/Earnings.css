@@ -1,0 +1,101 @@
+.earnings {
+    width: 289px;
+    height: 394px;
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+}
+
+.earnings_div {
+    position: absolute;
+    width: 289px;
+    height: 344px;
+    left: 773px;
+    top: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+}
+
+.earnings ~ p {
+    position: absolute;
+    width: 118px;
+    height: 30px;
+    left: 774px;
+    top: 0px;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 91.5%;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.earnings_heading {
+    position: absolute;
+    width: 167px;
+    height: 91px;
+    left: 61px;
+    top: 32px;
+}
+
+.earnings_heading > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+}
+
+.earnings_heading > div > p:first-child {
+    width: 124px;
+    height: 10px;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 91.5%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #A5A5A5;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.earnings_heading > div > p:nth-child(2) {
+    width: 167px;
+    height: 43px;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 91.5%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #000000;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.earnings_heading > div > p:last-child {
+    width: 124px;
+    height: 22px;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 91.5%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #A5A5A5;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}

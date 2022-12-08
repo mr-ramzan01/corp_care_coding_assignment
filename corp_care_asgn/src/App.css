@@ -315,3 +315,42 @@
   left: 292px;
   top: 174px;
 }
+
+.firstChild > div:first-child {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 28px;
+  width: 655px;
+  height: 319px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.secondChild {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 28px;
+
+  position: absolute;
+  width: 655px;
+  height: 394px;
+  left: 292px;
+  top: 529px;
+}
+
+.pageDivider {
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  left: 275px;
+  top: 304px;
+  border: 0.5px solid #B7B7B7;
+  transform: rotate(90deg);
+}
