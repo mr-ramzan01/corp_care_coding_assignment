@@ -6,7 +6,7 @@
     flex-grow: 0;
 }
 
-.analytics + p {
+.analytics > p {
     position: absolute;
     width: 118px;
     height: 30px;
@@ -20,4 +20,163 @@
     display: flex;
     align-items: center;
     color: #000000;
+}
+
+.analytics_div {
+    position: absolute;
+    width: 418px;
+    height: 269px;
+    left: 0px;
+    top: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 50px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+}
+
+.analytics_div > div:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 77px;
+    position: absolute;
+    width: 348px;
+    height: 18px;
+    left: 32px;
+    top: 25px;
+}
+
+
+.analytics__income--button {
+    width: 73px;
+    height: 18px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background: #525252;
+    border-radius: 25px;
+}
+
+.analytics__month--button {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    width: 112px;
+    height: 18px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+.analytics_income--button__text {
+    position: absolute;
+    width: 31.78px;
+    height: 16px;
+    left: 15.46px;
+    top: 1px;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 8px;
+    line-height: 91.5%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+
+.analytics_income--button__downArrow {
+    position: absolute;
+    width: 9.04px;
+    height: 12.02px;
+    left: 57.54px;
+    top: 4.48px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 8px;
+    line-height: 91.5%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    transform: rotate(90deg);
+}
+
+.analytics__month--button > p {
+    width: 49px;
+    height: 9px;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 91.5%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #B1B1B1;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.analytics__month--button > div {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+    width: 64px;
+    height: 18px;
+    left: 48px;
+    top: 0px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+.analytics_month--button__downArrow {
+    position: absolute;
+    width: 10.17px;
+    height: 10.29px;
+    left: 98px;
+    top: 3.91px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 8px;
+    line-height: 91.5%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    transform: rotate(90deg);
+}
+
+.analytics_month--button__text {
+    position: absolute;
+    width: 27.18px;
+    height: 18px;
+    left: 62px;
+    top: 0px;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 8px;
+    line-height: 91.5%;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.analytics_div > div:nth-child(2) {
+    border: 1px solid red;
+    position: absolute;
+    width: 347.5px;
+    height: 141.5px;
+    left: 34px;
+    top: 82.5px;
 }
