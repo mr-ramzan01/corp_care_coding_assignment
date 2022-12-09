@@ -1,6 +1,7 @@
 .rt {
-    width: 338px;
-    height: 393px;
+    border: 1px solid orange;
+    width: 366px;
+    height: 411.5px;
     flex: none;
     order: 0;
     flex-grow: 0;
