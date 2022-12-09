@@ -1,5 +1,4 @@
 .analytics {
-    border: 1px solid blue;
     width: 418px;
     height: 319px;flex: none;
     order: 0;
@@ -173,10 +172,9 @@
 }
 
 .analytics_div > div:nth-child(2) {
-    border: 1px solid red;
     position: absolute;
     width: 347.5px;
-    height: 141.5px;
+    height: 161.5px;
     left: 34px;
     top: 82.5px;
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../../styles/Analytics.css";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import {Chart as ChartJS, LineElement, Title, Tooltip, Legend, CategoryScale, Filler, LinearScale, PointElement} from 'chart.js'
@@ -8,16 +8,33 @@ ChartJS.register(
 )
 
 export const Analytics = () => {
+  const [label, setLabel] = useState([]);
+  const [graphData, setGraphData] = useState([]);
+
+  const getData = () => {
+    fetch('https://dackend-data.onrender.com/lineGraph')
+    .then((res) => res.json())
+    .then((res) => {
+      console.log(res ,'res22');
+      setLabel(res.labels);
+      setGraphData(res.data);
+    })
+  }
+
+  useEffect(() => {
+    getData();
+  },[]);
+
   const data = {
-    labels: ["Nov1", "Nov4", "Nov8", "Nov12", "Nov16"],
+    labels: label,
     datasets: [
       {
-        data: [30, 15, 25, 10, 40],
+        data: graphData,
         backgroundColor: (context) => {
           const chart = context.chart;
-          const { ctx, chartArea, scales } = chart;
+          const { ctx, chartArea } = chart;
           if (!chartArea) return null;
-          return bgGradient(ctx, chartArea, scales);
+          return bgGradient(ctx, chartArea);
         },
         borderColor: "#2624FF",
         pointBorderColor: "transparent",
@@ -26,15 +43,15 @@ export const Analytics = () => {
       },
     ],
   };
-  const bgGradient = (ctx, chartArea, scales) => {
-    const { left, right, top, bottom, width, height } = chartArea;
-    const { x, y } = scales;
+  const bgGradient = (ctx, chartArea) => {
+    const {  top, bottom } = chartArea;
     const gradientBackground = ctx.createLinearGradient(0, top, 0, bottom);
     gradientBackground.addColorStop(0, "#2624FF");
     gradientBackground.addColorStop(1, "rgba(255, 255, 255, 0)");
     return gradientBackground;
   };
   const options = {
+    aspectRatio: 2.2,
     plugins: {
       legend: false,
     },
@@ -78,9 +95,7 @@ export const Analytics = () => {
             </div>
           </div>
           <div>
-            <div>
               <Line data={data} options={options}></Line>
-            </div>
           </div>
         </div>
       </div>

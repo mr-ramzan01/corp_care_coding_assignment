@@ -12,7 +12,7 @@ export const Transfer = () => {
         </div>
         <div className='moneyDiv'>
           <div className='blueButton'></div>
-          <p>$450</p>
+          <p>$<span>450</span></p>
           <div>
             <p>Transfer</p>
           </div>

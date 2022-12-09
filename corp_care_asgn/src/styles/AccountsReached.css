@@ -1,5 +1,4 @@
 .accountsReached {
-    border: 1px solid red;
     width: 289px;
     height: 394px;
     flex: none;
@@ -24,7 +23,6 @@
 }
 
 .accountsReached_div {
-    border: 1px solid red;
     position: absolute;
     width: 289px;
     height: 344px;
@@ -35,7 +33,6 @@
 }
 
 .accountsReached_div > div:first-child {
-    border: 1px solid blue;
     position: absolute;
     width: 184px;
     height: 97px;
@@ -105,4 +102,12 @@
     align-items: center;
     flex: none;
     flex-grow: 0;
+}
+
+.accountsReached_graph {
+    position: absolute;
+    width: 237px;
+    height: 141.5px;
+    left: 27px;
+    top: 172px;
 }

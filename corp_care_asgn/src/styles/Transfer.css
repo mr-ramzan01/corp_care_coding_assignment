@@ -135,6 +135,10 @@
     flex-grow: 0;
 }
 
+.moneyDiv span {
+    color:#000000;
+}
+
 .moneyDiv > div:last-child {
     width: 113px;
     height: 39px;

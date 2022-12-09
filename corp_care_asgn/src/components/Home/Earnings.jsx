@@ -2,16 +2,37 @@ import React from 'react'
 import '../../styles/Earnings.css'
 import {Chart as ChartJS, BarElement, CategoryScale, LinearScale, Tooltip, Legend} from 'chart.js'
 import {Bar} from 'react-chartjs-2'
+import { useState } from 'react'
+import { useEffect } from 'react'
 ChartJS.register(
     BarElement, CategoryScale, LinearScale, Tooltip, Legend
 )
 
 export const Earnings = () => {
+  const [label, setLabel] = useState([]);
+  const [firstGraphData, setFirstGraphData] = useState([]);
+  const [secondGraphData, setSecondGraphData] = useState([]);
+
+  const getData = () => {
+    fetch('https://dackend-data.onrender.com/barGraph')
+    .then((res) => res.json())
+    .then((res) => {
+      console.log(res ,'res');
+      setLabel(res.labels);
+      setFirstGraphData(res.data.first);
+      setSecondGraphData(res.data.second);
+    })
+  }
+
+  useEffect(() => {
+    getData();
+  },[]);
+
   const data = {
-    labels: [ 'S','M', 'T', 'W', 'T', 'F', 'S'],
+    labels: label,
     datasets: [
         {
-            data: [20, 20, 20, 20, 20, 20, 20],
+            data: firstGraphData,
             backgroundColor: '#00D1FF',
             borderRadius: 10,
             barThickness: 7,
@@ -19,7 +40,7 @@ export const Earnings = () => {
             borderColor: '#fff'
         },
         {
-            data: [30, 30, 30, 30, 30, 30, 30],
+            data: secondGraphData,
             backgroundColor: '#0038FF',
             borderRadius: 10,
             barThickness: 7,
@@ -37,6 +58,9 @@ const options = {
   },
   scales: {
     y: {
+      ticks:{
+        stepSize: 10
+      },
       beginAtZero: true,
       grid: {
         drawBorder: false,
