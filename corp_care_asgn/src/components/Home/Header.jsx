@@ -7,7 +7,7 @@ export const Header = () => {
       <div className='searchbox'>
           <div className='text'>
               <p>Hello, John</p>
-              <img src="https://icons.iconarchive.com/icons/google/noto-emoji-people-bodyparts/512/12050-waving-hand-icon.png" alt="" />
+              <img src="/Images/hello.svg" alt="" />
           </div>
           <div className='search'></div>
           <div className='searchdiv'></div>

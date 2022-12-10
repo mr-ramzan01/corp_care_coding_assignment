@@ -7,7 +7,7 @@ export const Transfer = () => {
       <p>Recent Transactions</p>
       <div className='transferBox'>
         <div className='transferBox_heading1'>
-          <img src="https://www.iconpacks.net/icons/1/free-users-icon-267-thumb.png" alt="" />
+          <img src="/Images/users.svg" alt="" />
           <p>Transfer to your team</p>
         </div>
         <div className='moneyDiv'>
@@ -17,14 +17,14 @@ export const Transfer = () => {
             <p>Transfer</p>
           </div>
         </div>
-        <hr/>
+        <div className='transfer_divider'></div>
         <div className='usersIcon'>
-          <img style={{order: '0'}} src="https://cdn-icons-png.flaticon.com/512/219/219989.png" alt="" />
-          <img style={{order: '1'}} src="https://cdn-icons-png.flaticon.com/512/219/219969.png" alt="" />
-          <img style={{order: '2'}} src="https://cdn-icons-png.flaticon.com/512/219/219989.png" alt="" />
-          <img style={{order: '3'}} src="https://cdn-icons-png.flaticon.com/512/219/219988.png" alt="" />
-          <img style={{order: '4'}} src="https://cdn-icons-png.flaticon.com/512/219/219986.png" alt="" />
-          <img id='plus' style={{order: '5'}} src="https://img.icons8.com/ios-glyphs/512/macos-maximize.png" alt="" />
+          <img style={{order: '0'}} src="/Images/user1.svg" alt="" />
+          <img style={{order: '1'}} src="/Images/user2.svg" alt="" />
+          <img style={{order: '2'}} src="/Images/user3.svg" alt="" />
+          <img style={{order: '3'}} src="/Images/user4.svg" alt="" />
+          <img style={{order: '4'}} src="/Images/user5.svg" alt="" />
+          <img id='plus' style={{order: '5'}} src="/Images/plus.svg" alt="" />
         </div>
       </div>
     </>

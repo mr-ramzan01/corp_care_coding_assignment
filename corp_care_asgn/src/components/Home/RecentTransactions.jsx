@@ -10,7 +10,7 @@ export const RecentTransactions = () => {
             [0,1,2,3].map((el) => (
               <div className='transactions' key={el} >
                 <div className='transactions_div1'>
-                  <img src="https://cdn.dribbble.com/users/2489067/screenshots/17082855/media/6af73ac04bb9f03fd3c2e0f59e0f9b65.png?compress=1&resize=400x300" alt="" />
+                  <img src="/Images/transactions.svg" alt="" />
                 </div>
                 <div className='transactions_div2'>
                   <div>

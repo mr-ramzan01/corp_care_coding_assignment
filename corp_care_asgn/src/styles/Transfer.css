@@ -70,13 +70,13 @@
     flex-grow: 0;
 }
 
-.transferBox hr {
+.transfer_divider {
     position: absolute;
     width: 244px;
     height: 0px;
     left: 22px;
     top: 157px;
-    border: 1px solid #E6E6E6;
+    border-top: 1px solid #E6E6E6;
 }
 
 .usersIcon {
@@ -96,7 +96,7 @@
     height: 30px;
     flex: none;
     flex-grow: 0;
-    margin: 0px -6px;
+    margin: 0px -4px;
 }
 
 #plus {
