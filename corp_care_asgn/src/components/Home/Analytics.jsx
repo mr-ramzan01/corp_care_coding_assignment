@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "../../styles/Analytics.css";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import {Chart as ChartJS, LineElement, Title, Tooltip, Legend, CategoryScale, Filler, LinearScale, PointElement} from 'chart.js'
@@ -10,14 +10,21 @@ ChartJS.register(
 export const Analytics = () => {
   const [label, setLabel] = useState([]);
   const [graphData, setGraphData] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   const getData = () => {
+    setLoading(true);
     fetch('https://dackend-data.onrender.com/lineGraph')
     .then((res) => res.json())
     .then((res) => {
-      console.log(res ,'res22');
       setLabel(res.labels);
       setGraphData(res.data);
+    })
+    .catch((err) => {
+      console.log(err, 'error')
+    })
+    .finally(() => {
+      setLoading(false);
     })
   }
 
@@ -95,7 +102,7 @@ export const Analytics = () => {
             </div>
           </div>
           <div>
-              <Line data={data} options={options}></Line>
+              {loading?<img className="analytics_loading" src="/Images/loading.gif" alt=""/>:<Line data={data} options={options}></Line>}
           </div>
         </div>
       </div>

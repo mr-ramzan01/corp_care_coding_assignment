@@ -1,8 +1,7 @@
-import React, { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "../../styles/AccountsReached.css";
 import {Chart as ChartJS, LineElement, Title, Tooltip, Legend, CategoryScale, Filler, LinearScale, PointElement} from 'chart.js'
 import {Line} from 'react-chartjs-2'
-import { useState } from "react";
 ChartJS.register(
     LineElement, CategoryScale, LinearScale, PointElement,  Title, Tooltip, Legend, Filler
 )
@@ -10,14 +9,21 @@ ChartJS.register(
 export const AccountsReached = () => {
   const [label, setLabel] = useState([]);
   const [graphData, setGraphData] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   const getData = () => {
+    setLoading(true);
     fetch('https://dackend-data.onrender.com/lineGraph')
     .then((res) => res.json())
     .then((res) => {
-      console.log(res ,'res22');
       setLabel(res.labels);
       setGraphData(res.data);
+    })
+    .catch((err) => {
+      console.log(err, 'error')
+    })
+    .finally(() => {
+      setLoading(false);
     })
   }
 
@@ -51,7 +57,6 @@ export const AccountsReached = () => {
     return gradientBackground;
   };
   const options = {
-    // aspectRatio: 2.2,
     plugins: {
       legend: false,
     },
@@ -75,23 +80,23 @@ export const AccountsReached = () => {
       order: "0",
       width: "25px",
       color: "#BCBCBC",
-      title: "DAy",
+      title: "Day",
     },
     {
       order: "1",
-      width: "25px",
+      width: "34px",
       color: "#BCBCBC",
       title: "Week",
     },
     {
       order: "2",
-      width: "25px",
+      width: "34px",
       color: "#474747",
       title: "Month",
     },
     {
       order: "4",
-      width: "25px",
+      width: "34px",
       color: "#BCBCBC",
       title: "Year",
     },
@@ -105,13 +110,13 @@ export const AccountsReached = () => {
           <p>11,756</p>
           <div className="category">
             {category.map((el) => (
-              <p style={{ color: el.color, width: el.width }} key={el.order}>
+              <p style={{ color: el.color, width: el.width }} key={el.title}>
                 {el.title}
               </p>
             ))}
           </div>
           <div className="accountsReached_graph">
-            <Line data={data} options={options}></Line>
+            {loading?<img className="accountsReached_loading" src='/Images/loading.gif' alt='loading' />:<Line data={data} options={options}></Line>}
           </div>
         </div>
       </div>

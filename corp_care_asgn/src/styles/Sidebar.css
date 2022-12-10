@@ -1,0 +1,157 @@
+.sidebar {
+    border-right: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    position: absolute;
+    width: 247px;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
+  }
+  
+  .pointer_line {
+    background: #0500FF;
+    position: absolute;
+    width: 4px;
+    height: 33px;
+    left: 0px;
+    top: 190px;
+  }
+  
+  .divider_line {
+    border: 1px solid #DFDFDF;
+    position: absolute;
+    width: 169px;
+    height: 0px;
+    left: 39px;
+    top: 578px;
+  }
+  
+  
+  .group1 {
+    position: absolute;
+    width: 149px;
+    height: 799px;
+    left: 50px;
+    top: 84px;
+  }
+  
+  .logo {
+    position: absolute;
+    width: 125px;
+    height: 44px;
+    left: 50px;
+    top: 84px;
+    color: #0038FF;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 91.5%;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.055em;
+  }
+  
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 122px;
+  
+    position: absolute;
+    width: 149px;
+    height: 686.5px;
+    left: 50px;
+    top: 196.5px;
+  }
+  
+  .box1  {
+    width: 161px;
+    height: 314px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  .box1 > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 25px;
+  
+    position: absolute;
+    width: 161px;
+    height: 19px;
+    left: 0px;
+  }
+  
+  .box1 > div:first-child > p {
+    color: #000000;
+  }
+  .box1 p {
+    width: 117px;
+    height: 12px;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 91.5%;
+    display: flex;
+    align-items: center;
+    color: #9E9E9E;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  
+  .box img {
+    width: 19px;
+    height: 19px;
+    color: #606060;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  
+  .box2 {
+    width: 144px;
+    height: 196px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  
+  .box2 > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 25px;
+  
+    position: absolute;
+    width: 144px;
+    height: 19px;
+    left: 0px;
+  }
+  
+  
+  .box2 p {
+    width: 100px;
+    height: 13px;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 91.5%;
+    display: flex;
+    align-items: center;
+    color: #9E9E9E;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }

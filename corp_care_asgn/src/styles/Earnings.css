@@ -4,6 +4,8 @@
     flex: none;
     order: 1;
     flex-grow: 1;
+    font-family: 'Urbanist';
+    font-style: normal;
 }
 
 .earnings_div {
@@ -12,19 +14,15 @@
     height: 344px;
     left: 773px;
     top: 50px;
-    background: #FFFFFF;
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.06);
     border-radius: 10px;
 }
 
-.earnings ~ p {
+.earnings > p {
     position: absolute;
     width: 118px;
     height: 30px;
     left: 774px;
-    top: 0px;
-    font-family: 'Urbanist';
-    font-style: normal;
     font-weight: 800;
     font-size: 14px;
     line-height: 91.5%;
@@ -52,8 +50,6 @@
 .earnings_heading > div > p:first-child {
     width: 124px;
     height: 10px;
-    font-family: 'Urbanist';
-    font-style: normal;
     font-weight: 500;
     font-size: 10px;
     line-height: 91.5%;
@@ -62,15 +58,11 @@
     text-align: center;
     color: #A5A5A5;
     flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 
 .earnings_heading > div > p:nth-child(2) {
     width: 167px;
     height: 43px;
-    font-family: 'Urbanist';
-    font-style: normal;
     font-weight: 800;
     font-size: 40px;
     line-height: 91.5%;
@@ -79,15 +71,11 @@
     text-align: center;
     color: #000000;
     flex: none;
-    order: 1;
-    flex-grow: 0;
 }
 
 .earnings_heading > div > p:last-child {
     width: 124px;
     height: 22px;
-    font-family: 'Urbanist';
-    font-style: normal;
     font-weight: 500;
     font-size: 10px;
     line-height: 91.5%;
@@ -96,8 +84,6 @@
     text-align: center;
     color: #A5A5A5;
     flex: none;
-    order: 2;
-    flex-grow: 0;
 }
 
 
@@ -107,4 +93,9 @@
     height: 179px;
     left: 23px;
     top: 134px;
+}
+
+.earnings_loading {
+    width: 231px;
+    height: 179px; 
 }

@@ -3,42 +3,36 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0px;
     gap: 232px;
     position: absolute;
     width: 1052px;
     height: 54px;
     left: 292px;
     top: 57px;
+    font-family: 'Urbanist';
+    font-style: normal;
 }
 
 .searchbox { 
     width: 672px;
     height: 54px;
     flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 .icons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0px;
-    gap: 29px;
+    gap: 25px;
     width: 148px;
     height: 38px;
     flex: none;
-    order: 1;
-    flex-grow: 0;
 }
 
 .icons img {
     width: 30px;
     height: 30px;
     flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 #user {
     width: 38px;
@@ -50,7 +44,6 @@
     width: 339px;
     height: 54px;
     left: 333px;
-    top: 0px;
 }
 
 .searchdiv {
@@ -58,7 +51,6 @@
     width: 339px;
     height: 54px;
     left: 333px;
-    top: 0px;
     background: #F5F5F5;
     border-radius: 15px;
 }
@@ -69,8 +61,6 @@
     height: 19px;
     left: 378px;
     top: 18px;
-    font-family: 'Urbanist';
-    font-style: normal;
     font-weight: 800;
     font-size: 14px;
     line-height: 91.5%;
@@ -93,26 +83,21 @@
     align-items: center;
     padding: 0px;
     position: absolute;
-    /* width: 213px; */
+    width: 213px;
     height: 31px;
-    left: 0px;
     top: 11.5px;
 }
 
 .text p {
     width: 183px;
     height: 31px;
-    font-family: 'Urbanist';
-    font-style: normal;
     font-weight: 800;
     font-size: 36px;
     line-height: 91.5%;
     display: flex;
     align-items: center;
     color: #000000;
-    /* flex: none; */
-    order: 0;
-    /* flex-grow: 0; */
+    flex: none;
 }
 
 .text img {
@@ -120,7 +105,7 @@
     position: absolute;
     width: 30px;
     height: 30px;
-    left: 170px;
+    left: 185px;
     top: 0;
     order: 1;
 }
